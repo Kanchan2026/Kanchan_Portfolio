@@ -339,9 +339,7 @@ body {
   box-shadow: 0 0 20px rgba(0,255,225,0.4);
 }
 
-/* ============================= */
-/* CONTACT SECTION (CENTERED)    */
-/* ============================= */
+/* CONTACT SECTION    */
 
 .contact {
   min-height: calc(100vh - 80px); /* navbar height */
