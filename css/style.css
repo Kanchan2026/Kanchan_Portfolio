@@ -98,3 +98,46 @@ body {
   text-align: center;
   border-top: 1px solid rgba(255,255,255,0.2);
 }
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(0,0,0,0.6);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: #00ffe1;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.profile-img {
+  width: 160px;
+  border-radius: 50%;
+  border: 3px solid #00ffe1;
+  margin-bottom: 20px;
+}
+
+/* PAGE */
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
+}
