@@ -97,8 +97,8 @@ body {
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #00ffe1;
@@ -121,6 +121,52 @@ body {
   max-width: 520px;
   font-size: 0.95rem;
   opacity: 0.75;
+}
+/* HOME BUTTONS */
+.home-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Base button */
+.btn {
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+/* Hire Me (Primary) */
+.primary-btn {
+  background: #6fffe9;
+  color: #0a0a0a;
+  box-shadow: 0 0 12px rgba(111, 255, 233, 0.5);
+}
+
+.primary-btn:hover {
+  background: #5ae0cc;
+  box-shadow: 0 0 20px rgba(111, 255, 233, 0.8);
+  transform: translateY(-2px);
+}
+
+/* Download CV (Secondary) */
+.secondary-btn {
+  border: 2px solid #6fffe9;
+  color: #6fffe9;
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  background: rgba(111, 255, 233, 0.1);
+  box-shadow: 0 0 15px rgba(111, 255, 233, 0.6);
+  transform: translateY(-2px);
 }
 
 /* RESPONSIVE */
@@ -272,6 +318,21 @@ body {
   opacity: 0.85;
   line-height: 1.5;
 }
+/* CENTER SKILLS PAGE CONTENT */
+.skills-center {
+  min-height: calc(100vh - 80px); /* subtract navbar height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  padding: 40px 20px;
+}
+
+/* Keep rows centered */
+.skills-center .services-row {
+  justify-content: center;
+}
+
 
 /* MOBILE */
 @media (max-width: 600px) {
@@ -456,4 +517,13 @@ a[href^="tel:"]:hover {
   .social-icons {
     justify-content: center;
   }
+}
+/* PAGE TRANSITION */
+body {
+  animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0.85; }
+  to { opacity: 1; }
 }
