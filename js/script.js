@@ -8,7 +8,7 @@ window.addEventListener("load", () => {
 // Floating particles
 const bg = document.querySelector(".bg-effects");
 
-for (let i = 0; i < 35; i++) {
+for (let i = 0; i < 45; i++) {
   const particle = document.createElement("span");
   particle.classList.add("particle");
 

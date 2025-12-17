@@ -1,34 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
+  <meta charset="UTF-8">
+  <title>Projects | Kanchan Duwal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
+  <!-- BACKGROUND -->
+  <div class="bg-effects"></div>
+
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">Kanchan</div>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="skills.html">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- PROJECTS -->
   <section class="page">
-    <h1>Projects</h1>
 
-    <div class="card">
-      <h3>JAMK Game Project 1</h3>
-      <p>UI design, HUD, Unity Canvas implementation.</p>
+    <h1 class="section-title">Projects</h1>
+
+    <!-- PROJECT 1 : VIDEO -->
+    <div class="content-box project-box">
+
+      <h2>Drifting Thoughts – Game Project</h2>
+      <p class="project-role">
+        Role: UI/UX Designer & UI Artist
+      </p>
+
+      <p>
+        Drifting Thoughts is a narrative-driven game project where I focused on
+        designing immersive UI, menus, and visual flow. My work involved
+        creating interfaces that support storytelling and player engagement.
+      </p>
+
+      <!-- EMBEDDED YOUTUBE VIDEO -->
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/h-My61Msiew"
+          title="Drifting Thoughts Trailer"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>JAMK Game Project 2</h3>
-      <p>Advanced UI flow, responsive design, 2D assets.</p>
+    <!-- PROJECT 2 : IMAGE GALLERY -->
+    <div class="content-box project-box">
+
+      <h2>Game UI & Menu Design</h2>
+      <p class="project-role">
+        Role: UI/UX Designer
+      </p>
+
+      <p>
+        A collection of UI screens designed for a game project, including
+        main menu, pause menu, dialogue system, and settings interface.
+        Focus was placed on clarity, visual consistency, and immersive design.
+      </p>
+
+      <!-- IMAGE GALLERY -->
+      <div class="project-gallery">
+        <img src="assets/game1.jpg" alt="Game UI Screenshot 1">
+        <img src="assets/game2.jpg" alt="Game UI Screenshot 2">
+        <img src="assets/game3.jpg" alt="Game UI Screenshot 3">
+        <img src="assets/game4.jpg" alt="Game UI Screenshot 4">
+      </div>
+
     </div>
+
   </section>
 
 </body>
